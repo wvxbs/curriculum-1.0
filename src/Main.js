@@ -1,13 +1,12 @@
 import './index.css'
-import BoldTitle from './components/BoldTitle'
-import Subtitle from './components/Subtitle'
+import Header from './main/Header'
 
 const Main = () => (
     <div className="App">
-      <div>
-        <BoldTitle content="Gabriel Ferreira"/>
-        <Subtitle content="Estudante | Desenvolvedor "/>
-      </div>
+        <Header 
+          title="Gabriel Ferreira"
+          subtitle="Estudante | Desenvolvedor"
+        />
     </div>
 )
 
