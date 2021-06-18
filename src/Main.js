@@ -1,8 +1,8 @@
-import './App.css'
+import './index.css'
 import BoldTitle from './components/BoldTitle'
 import Subtitle from './components/Subtitle'
 
-const App = () => (
+const Main = () => (
     <div className="App">
       <div>
         <BoldTitle content="Gabriel Ferreira"/>
@@ -11,4 +11,4 @@ const App = () => (
     </div>
 )
 
-export default App
+export default Main
