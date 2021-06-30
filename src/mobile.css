@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+@media only screen and (max-width: 900px) {
+  .App {
+    padding: auto;
+    margin: auto
+  }
+
+  .bold-title {
+    font-size: 12vw;
+  }
+  
+  .subtitle {
+    font-size: 4vw;
+  }
+  
+  .info-display-text {
+    font-size: 3vw; 
+  }
+
+  .info-pill {
+    color: rgb(224, 224, 224);
+    background-color: rgb(80, 80, 80);
+    max-width: 100%;
+    width: 100%;
+    margin: auto
+  }
+}

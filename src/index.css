@@ -12,9 +12,10 @@ body {
 }
 
 .bold-title {
+  margin-top: 20px;
   text-align: left;
   font-family: 'Staatliches', cursive;
-  font-size: 4vw;
+  font-size: 5vw;
   color: rgb(224, 224, 224);
   margin-bottom: 5px;
 }
@@ -23,6 +24,20 @@ body {
   padding-top: 0;
   text-align: left;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1vw;
+  font-size: 1.2vw;
   color: rgb(187, 187, 187);
+}
+
+.info-display-text {
+  font-size: 1vw;
+  text-align: left;
+  color: rgb(224, 224, 224);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.info-pill {
+  color: rgb(224, 224, 224);
+  background-color: rgb(80, 80, 80);
+  max-width: 300px;
+  width: 25vw;
 }

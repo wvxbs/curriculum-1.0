@@ -1,6 +1,10 @@
+import InlineInformationDIsplay from "../components/InlineInformationDIsplay"
+
 const ContactInfo = (props) => (
     <div>
-        <h1>asdasdasd</h1>
+        <InlineInformationDIsplay 
+            content={props.content}
+        />
     </div>
 )
 
