@@ -6,41 +6,52 @@ const Main = () => {
 
   let ContactInformation = [
     {
-      img: "",
       content: "Rua Fausto, 357",
-      alt: ""
     },
     {
-      img: "",
       content: "(11) 947393932",
-      alt: ""
     }
   ]
 
-  const RenderContactInfo = () => (
-    ContactInformation.map((i) =>(
-      <ContactInfo
-        img={i.img} 
-        content={i.content}
-        alt={i.alt}
-      />
+  let ProfessionaExperience = [
+    {
+      title : 'hmmmm'
+    },
+    {
+      title : 'hmmmm'
+    },
+    {
+      title : 'hmmmm'
+    },
+    {
+      title : 'hmmmm'
+    },    {
+      title : 'hmmmm'
+    },
+    {
+      title : 'hmmmm'
+    }
+  ]
+
+  const RenderPopulatedComponents = (Component, Array) => (
+    Array.map((i) =>(
+      Component(i)
     ))
   )
+
 
 
   return(
     <div className="App">
         <div>
           <Header 
-          title="Gabriel Ferreira"
-          subtitle="Estudante | Desenvolvedor"
-        />
+            title="Gabriel Ferreira"
+            subtitle="Estudante | Desenvolvedor"
+          />
         </div>
         <div>
-          {RenderContactInfo()}
-        </div>
-        <div>
-          <InfoPill></InfoPill>
+          {RenderPopulatedComponents(ContactInfo, ContactInformation)}
+          {RenderPopulatedComponents(InfoPill, ProfessionaExperience)}
         </div>
     </div>
   )
