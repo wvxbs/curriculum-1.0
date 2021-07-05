@@ -3,32 +3,22 @@ import ContactInfo from "./main/ContactInfo"
 import InfoPill from "./main/InfoPill"
 
 const Main = () => {
-
-  let ContactInformation = [
-    {
-      content: "Rua Fausto, 357",
-    },
-    {
-      content: "(11) 947393932",
-    }
-  ]
-
-  let ProfessionaExperience = [
+  let InfoPillContent = [
     {
       title : "Objetivo",
       content: "Expandir minhas habilidades técnicas, adquirir conhecimento e realizar o melhor trabalho possível"
     },
     {
-      title : "Experiência Profissional",
-      content: ""
+      title : "Contato",
+      content: [
+        "E-mail: gabriel.ferreira7854@gmail.com",
+        "Celular: (11) 947393932",
+        "FIxo: (11) 25911866",
+      ]
     },
     {
-      title : "Qualificações",
-      content: ""
-    },
-    {
-      title : "Educação",
-      content: ""
+      title : "Idiomas",
+      content: "Português, Ingles (avançado/técnico) e Espanhol (intermediário)"
     },
   ]
 
@@ -49,10 +39,9 @@ const Main = () => {
           />
         </div>
         <div>
-          {RenderPopulatedComponents(ContactInfo, ContactInformation)}
           <div className="container">
             <div className="row">
-            {RenderPopulatedComponents(InfoPill, ProfessionaExperience)}
+            {RenderPopulatedComponents(InfoPill, InfoPillContent)}
             </div>
           </div>
         </div>

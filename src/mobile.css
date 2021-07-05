@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 993px) {
   .App {
     padding: auto;
     margin: auto
@@ -12,13 +12,13 @@
     text-align: center;
   }
   
-  .subtitle {
+  .subtitle { 
     font-size: 4vw;
     text-align: center;
   }
   
   .info-display-text {
-    font-size: 2.7vw; 
+    font-size: 3vw; 
     text-align: center;
   }
 
@@ -31,6 +31,10 @@
   }
 
   .info-pill .card-title {
+    font-size: 4vw;
+  }
+
+  .info-pill .card-text {
     font-size: 3vw;
   }
 }
