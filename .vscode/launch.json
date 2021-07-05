@@ -5,6 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "preLaunchTask": "npm: start",
             "name": "Launch localhost",
             "type": "firefox",
             "request": "launch",

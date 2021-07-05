@@ -1,6 +1,6 @@
-import Header from './main/Header'
-import ContactInfo from './main/ContactInfo'
-import InfoPill from './main/InfoPill'
+import Header from "./main/Header"
+import ContactInfo from "./main/ContactInfo"
+import InfoPill from "./main/InfoPill"
 
 const Main = () => {
 
@@ -15,22 +15,21 @@ const Main = () => {
 
   let ProfessionaExperience = [
     {
-      title : 'hmmmm'
+      title : "Objetivo",
+      content: "Expandir minhas habilidades técnicas, adquirir conhecimento e realizar o melhor trabalho possível"
     },
     {
-      title : 'hmmmm'
+      title : "Experiência Profissional",
+      content: ""
     },
     {
-      title : 'hmmmm'
+      title : "Qualificações",
+      content: ""
     },
     {
-      title : 'hmmmm'
-    },    {
-      title : 'hmmmm'
+      title : "Educação",
+      content: ""
     },
-    {
-      title : 'hmmmm'
-    }
   ]
 
   const RenderPopulatedComponents = (Component, Array) => (
@@ -51,7 +50,11 @@ const Main = () => {
         </div>
         <div>
           {RenderPopulatedComponents(ContactInfo, ContactInformation)}
-          {RenderPopulatedComponents(InfoPill, ProfessionaExperience)}
+          <div className="container">
+            <div className="row">
+            {RenderPopulatedComponents(InfoPill, ProfessionaExperience)}
+            </div>
+          </div>
         </div>
     </div>
   )

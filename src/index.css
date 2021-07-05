@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 body {
-  background-color: rgb(51, 51, 51);
+  background-color: rgb(54, 54, 54);
 }
 
 .App {
@@ -23,7 +23,6 @@ body {
 .subtitle {
   padding-top: 0;
   text-align: left;
-  font-family: 'Ubuntu', sans-serif;
   font-size: 1.2vw;
   color: rgb(187, 187, 187);
 }
@@ -32,12 +31,20 @@ body {
   font-size: 1vw;
   text-align: left;
   color: rgb(224, 224, 224);
-  font-family: 'Ubuntu', sans-serif;
 }
 
 .info-pill {
   color: rgb(224, 224, 224);
-  background-color: rgb(80, 80, 80);
+  background-color: rgb(66, 66, 66);
   max-width: 300px;
   width: 25vw;
+}
+
+.info-pill .card-title {
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+.info-pill .card-text {
+  text-align: left;
 }
