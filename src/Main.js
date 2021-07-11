@@ -1,6 +1,6 @@
 import Header from "./main/Header"
-import ContactInfo from "./main/ContactInfo"
 import InfoPill from "./main/InfoPill"
+import RelevantInfo from "./main/RelevantInfo"
 
 const Main = () => {
   let InfoPillContent = [
@@ -42,6 +42,9 @@ const Main = () => {
           <div className="container">
             <div className="row">
             {RenderPopulatedComponents(InfoPill, InfoPillContent)}
+            </div>
+            <div>
+              <RelevantInfo />
             </div>
           </div>
         </div>

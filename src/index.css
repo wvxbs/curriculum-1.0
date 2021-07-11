@@ -50,5 +50,14 @@ body {
 }
 
 .relevant-info {
-  
+  margin-top: 2vw;  
+  align-content: center;
+}
+
+.relevant-info-title {
+  font-weight: bold;
+  padding-top: 0;
+  text-align: left;
+  font-size: 1.3vw;
+  color: rgb(187, 187, 187);
 }
