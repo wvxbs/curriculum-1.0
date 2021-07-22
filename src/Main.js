@@ -3,6 +3,14 @@ import InfoPill from "./main/InfoPill"
 import RelevantInfo from "./main/RelevantInfo"
 
 const Main = () => {
+
+  let HeaderContent = [
+    {
+      title : "Gabriel Ferreira",
+      subtitle : "Estudante | Desenvolvedor"
+    }
+  ]
+
   let InfoPillContent = [
     {
       title : "Objetivo",
@@ -22,7 +30,7 @@ const Main = () => {
     },
   ]
 
-  const RenderPopulatedComponents = (Component, Array) => (
+  const RenderPopulatedComponent = (Component, Array) => (
     Array.map((i) =>(
       Component(i)
     ))
@@ -33,15 +41,12 @@ const Main = () => {
   return(
     <div className="App">
         <div>
-          <Header 
-            title="Gabriel Ferreira"
-            subtitle="Estudante | Desenvolvedor"
-          />
+          {RenderPopulatedComponent(Header, HeaderContent)}
         </div>
         <div>
           <div className="container">
             <div className="row">
-            {RenderPopulatedComponents(InfoPill, InfoPillContent)}
+            {RenderPopulatedComponent(InfoPill, InfoPillContent)}
             </div>
             <div>
               <RelevantInfo />
