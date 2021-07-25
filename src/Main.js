@@ -7,13 +7,15 @@ import data from './data/data.json'
 
 const Main = () => {
 
-  const [HeaderContent,setHeaderContent]=useState([]);
-  const [InfoPillContent,setInfoPillContent]=useState([]);
+  const [HeaderContent,setHeaderContent]=useState([])
+  const [InfoPillContent,setInfoPillContent]=useState([])
+  const [RelevantInfoContent,setRelevantInfoContent]=useState([])
 
   const GetData = () => (
     data.map((i) => {
       setHeaderContent(i.HeaderContent)
       setInfoPillContent(i.InfoPillContent)
+      setRelevantInfoContent(i.RelevantInfoContent)
     })
   )
 
@@ -40,11 +42,11 @@ const Main = () => {
           </div>
           <div>
             <div className="container">
-              <div className="row">
-              {RenderPopulatedComponent(InfoPill, InfoPillContent)}
+              <div className="row mt-4">
+                {RenderPopulatedComponent(InfoPill, InfoPillContent)}
               </div>
-              <div>
-                <RelevantInfo />
+              <div className="row mt-4">
+                {RenderPopulatedComponent(RelevantInfo, RelevantInfoContent)}
               </div>
             </div>
           </div>
