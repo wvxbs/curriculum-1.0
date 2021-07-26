@@ -49,15 +49,46 @@ body {
   text-align: left;
 }
 
-.relevant-info {
+.professional-experience {
   margin-top: 2vw;  
   align-content: center;
 }
 
-.relevant-info-title {
+.professional-experience-title {
   font-weight: bold;
   padding-top: 0;
   text-align: left;
   font-size: 1.3vw;
+  color: rgb(187, 187, 187);
+}
+
+.professional-experience-company {
+  padding-top: 0;
+  text-align: left;
+  font-size: 1.1vw;
+  color: rgb(187, 187, 187);
+}
+
+.professional-experience-role {
+  font-weight: bold;
+  padding-top: 0;
+  text-align: left;
+  font-size: 1.2vw;
+  color: rgb(187, 187, 187);
+}
+
+.professional-experience-duration {
+  font-weight: bold;
+  padding-top: 0;
+  text-align: left;
+  font-size: 0.8vw;
+  color: rgb(187, 187, 187);
+}
+
+.professional-experience-description {
+  font-weight: bold;
+  padding-top: 0;
+  text-align: left;
+  font-size: 1.2vw;
   color: rgb(187, 187, 187);
 }
