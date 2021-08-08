@@ -1,13 +1,9 @@
 import Duration from "./ProfessionalExperience/Duration"
 
 const ProfessionalExperience = (props) => {
-
     return (
         <div className="professional-experience">
             <div>
-                <h1 className="professional-experience-title">
-                    {props.title}
-                </h1>       
                 <p className="professional-experience-company">
                     {props.company}
                 </p>

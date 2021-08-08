@@ -68,6 +68,7 @@ body {
 }
 
 .professional-experience-company {
+  font-weight: 700;
   padding-top: 0;
   text-align: left;
   font-size: 1.1vw;
@@ -75,7 +76,7 @@ body {
 }
 
 .professional-experience-role {
-  font-weight: bold;
+  font-weight: 500;
   padding-top: 0;
   text-align: left;
   font-size: 1.2vw;
@@ -91,7 +92,7 @@ body {
 }
 
 .professional-experience-duration {
-  font-weight: bold ;
+  font-weight: 700;
   padding-top: 0;
   text-align: left;
   font-size: 0.7vw;

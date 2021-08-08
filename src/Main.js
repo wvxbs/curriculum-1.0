@@ -2,26 +2,34 @@ import { useEffect, useState } from "react"
 import FileNotFoundError from "./error/PageSizedError"
 import Header from "./main/Header"
 import InfoPill from "./main/InfoPill"
-import RelevantInfo from "./main/ProfessionalExperience"
+import ProfessionalExperience from "./main/ProfessionalExperience"
 import data from './data/data.json'
 import Footer from "./components/Footer"
 
 const Main = () => {
 
+  const [DataIsMissing,setDataIsMissing]=useState(true)
   const [HeaderContent,setHeaderContent]=useState([])
   const [InfoPillContent,setInfoPillContent]=useState([])
-  const [RelevantInfoContent,setRelevantInfoContent]=useState([])
+  const [ProfessionalExperienceContent,setProfessionalExperienceContent]=useState([])
+
+  const VerifyIfDataExists = () => {
+    if(data.length > 0)
+      setDataIsMissing(false)
+  }
 
   const GetDataFromJsonFile = () => (
     data.forEach((i) => {
       setHeaderContent(i.HeaderContent)
       setInfoPillContent(i.InfoPillContent)
-      setRelevantInfoContent(i.RelevantInfoContent)
+      setProfessionalExperienceContent(i.ProfessionalExperienceContent)
     })
   )
 
   useEffect(() => {
-    GetDataFromJsonFile()
+    VerifyIfDataExists()
+    if(!DataIsMissing)
+      GetDataFromJsonFile()
   })
 
   const RenderPopulatedComponent = (Component, ContentArray) => (
@@ -30,7 +38,7 @@ const Main = () => {
     ))
   )
 
-  if(HeaderContent.length === 0) {
+  if(DataIsMissing) {
     return (
       <FileNotFoundError title="Sem Dados"/>
     )
@@ -47,7 +55,10 @@ const Main = () => {
             {RenderPopulatedComponent(InfoPill, InfoPillContent)}
           </div>
           <div className="row mt-4">
-            {RenderPopulatedComponent(RelevantInfo, RelevantInfoContent)}
+            <div className="professional-experience-title">
+              Experiência Profissional
+            </div>
+            {RenderPopulatedComponent(ProfessionalExperience, ProfessionalExperienceContent)}
           </div>
         </div>
         </div>
