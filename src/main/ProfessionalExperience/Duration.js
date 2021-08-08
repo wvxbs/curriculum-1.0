@@ -1,12 +1,12 @@
-const Duration = (props) => (
-    <ul className="list-group list-group-flush">
-        <li className="list-group-item professional-experience-duration">
-            {props.start}
-        </li>
-        <li className="list-group-item professional-experience-duration">
-            {props.end}
-        </li>
-    </ul>
+const Duration = props => (
+    <div className="list-group list-group-horizontal professional-experience-duration-container">
+        <p className="list-group-item professional-experience-duration">
+            De: {props.start}
+        </p>
+        <p className="list-group-item professional-experience-duration">
+            Até: {props.end}
+        </p>
+    </div>
 )   
 
 export default Duration

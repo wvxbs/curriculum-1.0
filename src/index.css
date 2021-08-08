@@ -82,11 +82,19 @@ body {
   color: rgb(187, 187, 187);
 }
 
-.professional-experience-duration {
+.professional-experience-duration-container {
   font-weight: bold;
   padding-top: 0;
   text-align: left;
   font-size: 0.8vw;
+  color: rgb(187, 187, 187);
+}
+
+.professional-experience-duration {
+  font-weight: bold ;
+  padding-top: 0;
+  text-align: left;
+  font-size: 0.7vw;
   color: rgb(187, 187, 187);
 }
 
@@ -97,7 +105,7 @@ body {
   color: rgb(187, 187, 187);
 }
 
-.professional-experience .list-group-item {
+.professional-experience-duration-container .list-group-item {
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
 }

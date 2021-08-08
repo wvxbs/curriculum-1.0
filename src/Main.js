@@ -13,7 +13,7 @@ const Main = () => {
   const [RelevantInfoContent,setRelevantInfoContent]=useState([])
 
   const GetDataFromJsonFile = () => (
-    data.map((i) => {
+    data.forEach((i) => {
       setHeaderContent(i.HeaderContent)
       setInfoPillContent(i.InfoPillContent)
       setRelevantInfoContent(i.RelevantInfoContent)
@@ -30,7 +30,7 @@ const Main = () => {
     ))
   )
 
-  if(HeaderContent === []){
+  if(HeaderContent.length === 0) {
     return (
       <FileNotFoundError title="Sem Dados"/>
     )
