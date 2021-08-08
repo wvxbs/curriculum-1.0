@@ -11,6 +11,10 @@ body {
   padding-right: 10%;
 }
 
+.footer {
+  height: 100px;
+}
+
 .bold-title {
   margin-top: 20px;
   text-align: left;
@@ -36,6 +40,7 @@ body {
 .info-pill {
   color: rgb(224, 224, 224);
   background-color: rgb(66, 66, 66);
+  margin: auto;
   max-width: 300px;
   width: 25vw;
 }
@@ -86,9 +91,13 @@ body {
 }
 
 .professional-experience-description {
-  font-weight: bold;
   padding-top: 0;
   text-align: left;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   color: rgb(187, 187, 187);
+}
+
+.professional-experience .list-group-item {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
 }

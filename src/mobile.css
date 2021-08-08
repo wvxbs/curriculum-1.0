@@ -20,11 +20,10 @@
   }
 
   .info-pill {
-    color: rgb(224, 224, 224);
-    background-color: rgb(80, 80, 80);
     max-width: 100%;
     width: 100%;
-    margin: auto
+    margin: auto;
+    margin-bottom: 20px;
   }
 
   .info-pill .card-title {
@@ -33,5 +32,27 @@
 
   .info-pill .card-text {
     font-size: 3vw;
+  }
+
+  .professional-experience {
+    margin-top: 2vw;  
+    align-content: center;
+  }
+  
+  .professional-experience-title {
+    font-size: 5.5vw;
+  }
+  
+  .professional-experience-company, .professional-experience-role {
+    font-size: 4vw;
+  }
+  
+  .professional-experience-duration {
+    margin-top: 0;
+    font-size: 3vw;
+  }
+  
+  .professional-experience-description {
+    font-size: 3.5vw;
   }
 }

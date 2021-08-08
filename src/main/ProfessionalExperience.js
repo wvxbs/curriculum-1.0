@@ -7,7 +7,7 @@ const ProfessionalExperience = (props) => {
             <div>
                 <h1 className="professional-experience-title">
                     {props.title}
-                </h1>
+                </h1>       
                 <p className="professional-experience-company">
                     {props.company}
                 </p>

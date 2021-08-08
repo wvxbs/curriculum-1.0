@@ -4,6 +4,7 @@ import Header from "./main/Header"
 import InfoPill from "./main/InfoPill"
 import RelevantInfo from "./main/ProfessionalExperience"
 import data from './data/data.json'
+import Footer from "./components/Footer"
 
 const Main = () => {
 
@@ -50,6 +51,7 @@ const Main = () => {
           </div>
         </div>
         </div>
+        <Footer />
       </div>
     )
   }

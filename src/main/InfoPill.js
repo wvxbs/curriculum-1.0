@@ -2,10 +2,6 @@ import InfoPillItem from "./infopill/InfoPillItem"
 import InfoPillItemList from "./infopill/InfoPillItemList"
 
 const InfoPill = (props) => {
-
-    const RenderInfoPillContent = (Content) => {
-            return <InfoPillItem content={Content} />
-    }
     return (
         <div className="col-lg-auto">
             <div className="card info-pill">
@@ -13,7 +9,7 @@ const InfoPill = (props) => {
                     <h5 className="card-title">{props.title}</h5>
                     <h6 className="card-subtitle mb-2 text-muted">{props.subtitle}</h6>
                     <p className="card-text">
-                        {RenderInfoPillContent(props.content)}
+                        content={props.content}
                     </p>
                 </div>
             </div>
@@ -21,4 +17,4 @@ const InfoPill = (props) => {
     )
 }
 
-export default InfoPill
+export default InfoPill 
