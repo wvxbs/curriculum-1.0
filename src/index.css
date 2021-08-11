@@ -76,10 +76,10 @@ body {
 }
 
 .professional-experience-role {
-  font-weight: 500;
+  font-weight: 600;
   padding-top: 0;
   text-align: left;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   color: rgb(187, 187, 187);
 }
 
@@ -102,7 +102,7 @@ body {
 .professional-experience-description {
   padding-top: 0;
   text-align: left;
-  font-size: 1.1vw;
+  font-size: 1vw;
   color: rgb(187, 187, 187);
 }
 
