@@ -20,7 +20,7 @@ const Main = () => {
 
   const GetDataFromJsonFile = () => (
     data.forEach((i) => {
-      setHeaderContent(i.HeaderContent)
+      setHeaderContent(i.HeaderContent) 
       setInfoPillContent(i.InfoPillContent)
       setProfessionalExperienceContent(i.ProfessionalExperienceContent)
     })

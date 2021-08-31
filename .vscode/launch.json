@@ -11,7 +11,6 @@
                 "url": "http://localhost",
                 "path": "${workspaceFolder}"
             }],
-            "preLaunchTask": "npm: start",
         }
     ]
 }
