@@ -3,6 +3,7 @@
 
 body {
   background-color: rgb(54, 54, 54);
+  height: 100%;
 }
 
 .App {
@@ -110,3 +111,21 @@ body {
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
 }
+
+.page-sized-error {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.page-sized-error-text{
+  justify-content: center;
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+  font-size: 5vw;
+  color: rgb(224, 224, 224);
+}
+

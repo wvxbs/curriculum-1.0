@@ -15,7 +15,7 @@ const Main = () => {
 
   const VerifyIfDataExists = () => {
     if(data.length > 0)
-      setDataIsMissing(true)
+      setDataIsMissing(false)
   }
 
   const GetDataFromJsonFile = () => (

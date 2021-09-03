@@ -1,8 +1,10 @@
 const PageSizedError = (props) => {
     return (
-        <h1 className="bold-title">
-            {props.title}
-        </h1>
+        <div className="page-sized-error">
+            <h1 className="page-sized-error-text">
+                {props.title}
+            </h1>
+        </div>
     )
 }
 

@@ -9,3 +9,4 @@ const ContactInfo = (props) => (
 )
 
 export default ContactInfo
+    
