@@ -1,0 +1,53 @@
+@media only screen and (max-width: 993px) {
+    .App {
+      padding: auto;
+      margin: auto
+    }
+  
+    .bold-title, .page-sized-error-text {
+      font-size: 10vw;
+    }
+    
+    .subtitle { 
+      font-size: 3vw;
+    }
+    
+    .info-display-text {
+      font-size: 3vw; 
+      text-align: center;
+    }
+  
+    .info-pill {
+     
+    }
+  
+    .info-pill .card-title {
+      font-size: 2.5vw;
+    }
+  
+    .info-pill .card-text {
+      font-size: 2vw;
+    }
+  
+    .professional-experience {
+      margin-top: 2vw;  
+      align-content: center;
+    }
+    
+    .professional-experience-title {
+      font-size: 3vw;
+    }
+    
+    .professional-experience-company, .professional-experience-role {
+      font-size: 2.3vw;
+    }
+    
+    .professional-experience-duration {
+      margin-top: 0;
+      font-size: 1.8vw;
+    }
+    
+    .professional-experience-description {
+      font-size: 1.9vw;
+    }
+  }

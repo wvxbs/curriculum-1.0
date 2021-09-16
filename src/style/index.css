@@ -44,6 +44,7 @@ body {
   margin: auto;
   max-width: 300px;
   width: 25vw;
+  margin-bottom: 20px;
 }
 
 .info-pill .card-title {

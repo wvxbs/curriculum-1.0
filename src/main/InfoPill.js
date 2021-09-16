@@ -3,7 +3,7 @@ import InfoPillItemList from "./infopill/InfoPillItemList"
 
 const InfoPill = (props) => {
     return (
-        <div className="col-lg-auto">
+        <div className="col-md-auto">
             <div className="card info-pill">
                 <div className="card-body">
                     <h5 className="card-title">{props.title}</h5>

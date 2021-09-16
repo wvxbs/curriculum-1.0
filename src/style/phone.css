@@ -1,12 +1,13 @@
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width: 769px) {
   .App {
     padding: auto;
     margin: auto
   }
 
   .bold-title, .page-sized-error-text {
-    font-size: 10vw;
+    font-size: 15vw;
     text-align: center;
+    text-justify: distribute;
   }
   
   .subtitle { 
@@ -23,7 +24,6 @@
     max-width: 100%;
     width: 100%;
     margin: auto;
-    margin-bottom: 20px;
   }
 
   .info-pill .card-title {
