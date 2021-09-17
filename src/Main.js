@@ -60,13 +60,16 @@ const Main = () => {
             {RenderPopulatedComponent(Header, HeaderContent)}
           </div>
           <div>
+          <div className="section-title">
+              Informações Rápidas:
+          </div>
           <div className="row justify-content-sm-center mt-4">
             {RenderPopulatedComponent(InfoPill, InfoPillContent)}
           </div>
+          <div className="section-title">
+              Experiência Profissional:
+          </div>
           <div className="row mt-4">
-            <div className="professional-experience-title">
-              Experiência Profissional
-            </div>
             {RenderPopulatedComponent(ProfessionalExperience, ProfessionalExperienceContent)}
           </div>
         </div>

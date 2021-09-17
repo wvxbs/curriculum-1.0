@@ -32,6 +32,15 @@ body {
   color: rgb(187, 187, 187);
 }
 
+.section-title {
+  margin-top: 1vw;
+  font-weight: bold;
+  padding-top: 0;
+  text-align: left;
+  font-size: 1.3vw;
+  color: rgb(224, 224, 224);
+}
+
 .info-display-text {
   font-size: 0.9vw;
   text-align: left;
@@ -58,16 +67,7 @@ body {
 }
 
 .professional-experience {
-  margin-top: 2vw;  
   align-content: center;
-}
-
-.professional-experience-title {
-  font-weight: bold;
-  padding-top: 0;
-  text-align: left;
-  font-size: 1.3vw;
-  color: rgb(187, 187, 187);
 }
 
 .professional-experience-company {
@@ -75,7 +75,7 @@ body {
   padding-top: 0;
   text-align: left;
   font-size: 1.1vw;
-  color: rgb(187, 187, 187);
+  color: rgb(224, 224, 224);
 }
 
 .professional-experience-role {
@@ -83,7 +83,7 @@ body {
   padding-top: 0;
   text-align: left;
   font-size: 1.1vw;
-  color: rgb(187, 187, 187);
+  color: rgb(224, 224, 224);
 }
 
 .professional-experience-duration-container {
@@ -130,4 +130,3 @@ body {
   font-size: 5vw;
   color: rgb(224, 224, 224);
 }
-

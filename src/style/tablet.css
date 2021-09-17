@@ -1,4 +1,4 @@
-@media only screen and (max-width: 993px)   {
+@media only screen and (max-width: 993px)  {
     .App {
       padding: auto;
       margin: auto
@@ -36,7 +36,7 @@
       align-content: center;
     }
     
-    .professional-experience-title {
+    .section-title {
       font-size: 4vw;
     }
     
