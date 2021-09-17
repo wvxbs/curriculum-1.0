@@ -5,9 +5,11 @@ import InfoPill from "./main/InfoPill"
 import ProfessionalExperience from "./main/ProfessionalExperience"
 import data from './data/data.json'
 import Footer from "./components/Footer"
+import FullWidthPreLoader from "./components/FullWidthPreLoader"
 
 const Main = () => {
 
+  const [Loading, SetLoading] = useState(true)
   const [DataIsMissing,setDataIsMissing]=useState(true)
   const [HeaderContent,setHeaderContent]=useState([])
   const [InfoPillContent,setInfoPillContent]=useState([])
@@ -30,6 +32,8 @@ const Main = () => {
     VerifyIfDataExists()
     if(!DataIsMissing)
       GetDataFromJsonFile()
+    
+    SetLoading(false)
   })
 
   const RenderPopulatedComponent = (Component, ContentArray) => (
@@ -38,7 +42,12 @@ const Main = () => {
     ))
   )
 
-  if(DataIsMissing) {
+  if(Loading)  {
+    return (
+      <FullWidthPreLoader />
+    )
+  }
+  else if(DataIsMissing) {
     return (
       <FileNotFoundError title="Sem Dados"/>
     )
@@ -51,7 +60,7 @@ const Main = () => {
             {RenderPopulatedComponent(Header, HeaderContent)}
           </div>
           <div>
-          <div className="row mt-4">
+          <div className="row justify-content-md-center mt-4">
             {RenderPopulatedComponent(InfoPill, InfoPillContent)}
           </div>
           <div className="row mt-4">

@@ -18,7 +18,9 @@
     }
   
     .info-pill {
-     
+      height: 25vh;
+      width: 70vw;
+      min-width: 100%;
     }
   
     .info-pill .card-title {

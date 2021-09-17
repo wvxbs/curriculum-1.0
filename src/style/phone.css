@@ -5,7 +5,7 @@
   }
 
   .bold-title, .page-sized-error-text {
-    font-size: 15vw;
+    font-size: 25vw;
     text-align: center;
     text-justify: distribute;
   }
@@ -21,9 +21,9 @@
   }
 
   .info-pill {
-    max-width: 100%;
-    width: 100%;
-    margin: auto;
+    width: 70%;
+    height: 100%;
+    margin-bottom: 12px;
   }
 
   .info-pill .card-title {

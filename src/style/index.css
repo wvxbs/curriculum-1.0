@@ -43,6 +43,7 @@ body {
   background-color: rgb(66, 66, 66);
   margin: auto;
   max-width: 300px;
+  min-height: 155px;
   width: 25vw;
   margin-bottom: 20px;
 }
