@@ -61,13 +61,13 @@ const Main = () => {
           </div>
           <div>
           <div className="section-title">
-              Informações Rápidas:
+              Informações Rápidas
           </div>
           <div className="row justify-content-sm-center mt-4">
             {RenderPopulatedComponent(InfoPill, InfoPillContent)}
           </div>
           <div className="section-title">
-              Experiência Profissional:
+              Experiência Profissional
           </div>
           <div className="row mt-4">
             {RenderPopulatedComponent(ProfessionalExperience, ProfessionalExperienceContent)}
