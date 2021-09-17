@@ -1,37 +1,36 @@
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 577px) {
   .App {
     padding: auto;
     margin: auto
   }
 
   .bold-title, .page-sized-error-text {
-    font-size: 25vw;
-    text-align: center;
-    text-justify: distribute;
+    font-size: 16vw !important;
+    text-align: left;
   }
   
-  .subtitle { 
-    font-size: 4vw;
-    text-align: center;
+  .subtitle {   
+    font-size: 6vw !important;
+    text-align: left;
   }
   
   .info-display-text {
-    font-size: 3vw; 
+    font-size: 3vw!important; 
     text-align: center;
   }
 
   .info-pill {
-    width: 70%;
-    height: 100%;
+    width: 90%;
+    min-height: 210px;
     margin-bottom: 12px;
   }
 
   .info-pill .card-title {
-    font-size: 4vw;
+    font-size: 6vw !important;
   }
 
   .info-pill .card-text {
-    font-size: 3vw;
+    font-size: 4vw !important;
   }
 
   .professional-experience {
@@ -40,19 +39,19 @@
   }
   
   .professional-experience-title {
-    font-size: 5.5vw;
+    font-size: 6.5vw !important;
   }
   
   .professional-experience-company, .professional-experience-role {
-    font-size: 4vw;
+    font-size: 5vw!important;
   }
   
   .professional-experience-duration {
     margin-top: 0;
-    font-size: 3vw;
+    font-size: 3.5vw!important;
   }
   
   .professional-experience-description {
-    font-size: 3.5vw;
+    font-size: 4vw !important;
   }
 }

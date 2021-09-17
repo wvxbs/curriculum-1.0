@@ -1,4 +1,4 @@
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width: 993px)   {
     .App {
       padding: auto;
       margin: auto
@@ -37,19 +37,19 @@
     }
     
     .professional-experience-title {
-      font-size: 3vw;
+      font-size: 4vw;
     }
     
     .professional-experience-company, .professional-experience-role {
-      font-size: 2.3vw;
+      font-size: 3vw;
     }
     
     .professional-experience-duration {
       margin-top: 0;
-      font-size: 1.8vw;
+      font-size: 2vw;
     }
     
     .professional-experience-description {
-      font-size: 1.9vw;
+      font-size: 3w;
     }
   }

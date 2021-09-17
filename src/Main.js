@@ -60,7 +60,7 @@ const Main = () => {
             {RenderPopulatedComponent(Header, HeaderContent)}
           </div>
           <div>
-          <div className="row justify-content-md-center mt-4">
+          <div className="row justify-content-sm-center mt-4">
             {RenderPopulatedComponent(InfoPill, InfoPillContent)}
           </div>
           <div className="row mt-4">

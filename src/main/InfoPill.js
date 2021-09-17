@@ -13,7 +13,7 @@ const InfoPill = props => {
     }
 
     return (
-        <div className="col-md-auto">
+        <div className="col-sm-auto">
             <div className="card info-pill">
                 <div className="card-body">
                     <h5 className="card-title">{props.title}</h5>
