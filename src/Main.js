@@ -16,7 +16,7 @@ const Main = () => {
   const [ProfessionalExperienceContent,setProfessionalExperienceContent]=useState([])
 
   const VerifyIfDataExists = () => {
-    if(data.length > 0)
+    if(data[0].length > 0)
       setDataIsMissing(false)
   }
 
