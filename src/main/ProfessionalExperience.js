@@ -8,8 +8,8 @@ const ProfessionalExperience = (props) => {
                     {props.company}
                 </p>
                 <Duration 
-                    start={props.duration.start}
-                    end={props.duration.end}
+                    start={props.duration[0]}
+                    end={props.duration[1]}
                 />
                 <p className="professional-experience-role">
                     {props.role}

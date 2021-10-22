@@ -1,46 +1,57 @@
 import { useEffect, useState } from "react"
+import axios from "axios"
 import FileNotFoundError from "./error/PageSizedError"
 import Header from "./main/Header"
 import InfoPill from "./main/InfoPill"
 import ProfessionalExperience from "./main/ProfessionalExperience"
-import data from './data/data.json'
 import Footer from "./components/Footer"
 import FullWidthPreLoader from "./components/FullWidthPreLoader"
 
-const Main = () => {
+const Main = props => {
 
   const [Loading, SetLoading] = useState(true)
   const [DataIsMissing,setDataIsMissing]=useState(true)
   const [HeaderContent,setHeaderContent]=useState([])
   const [InfoPillContent,setInfoPillContent]=useState([])
   const [ProfessionalExperienceContent,setProfessionalExperienceContent]=useState([])
+  const [ErrorMessage,setErrorMessage]=useState("")
 
-  const VerifyIfDataExists = () => {
-    if(data[0].length > 0)
+  const instance = axios.create({
+    proxy: 'http://localhost:3001',
+    baseURL: 'http://localhost:3001',
+    responseType: 'json',
+    timeout: 1000,
+    headers: {
+      "Content-type": "application/json"
+    }
+  })
+  
+  const FetchData = async (Route, Setter) => {
+    await instance.get(`/${Route}`)
+    .then(res => {
+      Setter(res.data)
       setDataIsMissing(false)
+    })
+    .catch(error => {
+      setErrorMessage(error.message)
+    })
   }
 
-  const GetDataFromJsonFile = () => (
-    data.forEach((i) => {
-      setHeaderContent(i.HeaderContent) 
-      setInfoPillContent(i.InfoPillContent)
-      setProfessionalExperienceContent(i.ProfessionalExperienceContent)
-    })
-  )
-
   useEffect(() => {
-    VerifyIfDataExists()
-    if(!DataIsMissing)
-      GetDataFromJsonFile()
-    
+    FetchData("Header", setHeaderContent)
+    FetchData("InfoPill", setInfoPillContent)
+    FetchData("ProfessionalExperience", setProfessionalExperienceContent)
+
     SetLoading(false)
   })
 
-  const RenderPopulatedComponent = (Component, ContentArray) => (
-    ContentArray.map((i) =>(
-      Component(i)
-    ))
-  )
+  const RenderPopulatedComponent = (Component, Array) => {
+    if(!DataIsMissing) {
+    return Array.map(i => {
+      return Component(i)
+    })
+  }
+  }
 
   if(Loading)  {
     return (
@@ -48,6 +59,7 @@ const Main = () => {
     )
   }
   else if(DataIsMissing) {
+    console.log(ErrorMessage)
     return (
       <FileNotFoundError title="Sem Dados"/>
     )
@@ -64,7 +76,7 @@ const Main = () => {
               Informações Rápidas
           </div>
           <div className="row justify-content-sm-center mt-4">
-            {RenderPopulatedComponent(InfoPill, InfoPillContent)}
+            {RenderPopulatedComponent(InfoPill, InfoPillContent)} 
           </div>
           <div className="section-title">
               Experiência Profissional

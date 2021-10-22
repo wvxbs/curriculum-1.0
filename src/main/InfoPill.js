@@ -19,7 +19,7 @@ const InfoPill = props => {
                     <h5 className="card-title">{props.title}</h5>
                     <h6 className="card-subtitle mb-2 text-muted">{props.subtitle}</h6>
                     <div>
-                        {VerifyIfThereIsAListOfItems(props.content)}
+                        <InfoPillItem content={props.content} />
                     </div>
                 </div>
             </div>
