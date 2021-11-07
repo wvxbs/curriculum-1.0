@@ -17,8 +17,8 @@ const Main = props => {
   const [ErrorMessage,setErrorMessage]=useState("")
 
   const instance = axios.create({
-    proxy: 'http://localhost:3001',
-    baseURL: 'http://localhost:3001',
+    proxy: '',
+    baseURL: '',
     responseType: 'json',
     timeout: 1000,
     headers: {
@@ -31,9 +31,11 @@ const Main = props => {
     .then(res => {
       Setter(res.data)
       setDataIsMissing(false)
+      SetLoading(false)
     })
     .catch(error => {
       setErrorMessage(error.message)
+      SetLoading(false)
     })
   }
 
@@ -41,11 +43,9 @@ const Main = props => {
     FetchData("Header", setHeaderContent)
     FetchData("InfoPill", setInfoPillContent)
     FetchData("ProfessionalExperience", setProfessionalExperienceContent)
-
-    SetLoading(false)
   })
 
-  const RenderPopulatedComponent = (Component, Array) => {
+   const RenderPopulatedComponent = (Component, Array) => {
     if(!DataIsMissing) {
     return Array.map(i => {
       return Component(i)
@@ -58,13 +58,14 @@ const Main = props => {
       <FullWidthPreLoader />
     )
   }
-  else if(DataIsMissing) {
-    console.log(ErrorMessage)
-    return (
-      <FileNotFoundError title="Sem Dados"/>
-    )
-  }
   else {
+    if(DataIsMissing) {
+      console.log(ErrorMessage)
+      return (
+        <FileNotFoundError title="Sem Dados" alt={ErrorMessage}/>
+      )
+    }
+    else {
     return(
       <div className="App">
         <div className="container">
@@ -89,6 +90,7 @@ const Main = props => {
         <Footer />
       </div>
     )
+    }
   }
 }
 
