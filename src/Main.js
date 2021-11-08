@@ -6,6 +6,7 @@ import InfoPill from "./main/InfoPill"
 import ProfessionalExperience from "./main/ProfessionalExperience"
 import Footer from "./components/Footer"
 import FullWidthPreLoader from "./components/FullWidthPreLoader"
+import Request from "./Request.json"
 
 const Main = props => {
 
@@ -17,10 +18,10 @@ const Main = props => {
   const [ErrorMessage,setErrorMessage]=useState("")
 
   const instance = axios.create({
-    proxy: '',
-    baseURL: '',
+    proxy: Request.Proxy,
+    baseURL: Request.BaseUrl,
     responseType: 'json',
-    timeout: 1000,
+    timeout: 5000,
     headers: {
       "Content-type": "application/json"
     }
@@ -39,10 +40,14 @@ const Main = props => {
     })
   }
 
+  const ManageRequests = async() => {
+    await FetchData("Header", setHeaderContent)
+    await FetchData("InfoPill", setInfoPillContent)
+    await FetchData("ProfessionalExperience", setProfessionalExperienceContent)
+  }
+
   useEffect(() => {
-    FetchData("Header", setHeaderContent)
-    FetchData("InfoPill", setInfoPillContent)
-    FetchData("ProfessionalExperience", setProfessionalExperienceContent)
+    ManageRequests()
   })
 
    const RenderPopulatedComponent = (Component, Array) => {

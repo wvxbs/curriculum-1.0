@@ -4,6 +4,9 @@
 
 /.vscode
 
+#request file
+/src/Request.json
+
 # dependencies
 /node_modules
 /.pnp
