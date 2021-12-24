@@ -1,8 +1,17 @@
-## Available Scripts
+# curriculum-1.0
+The first version of my curriculum, made using React and Bulma
 
-In the project directory, you can run:
+## Before running
+You need to have npm installed in your machine
 
-### `npm start`
+Navigate to the repository location, then run
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+npm install 
+```
+
+## To run in development mode 
+
+```bash
+npm start
+```
