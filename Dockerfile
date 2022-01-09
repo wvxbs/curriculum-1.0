@@ -1,13 +1,12 @@
-FROM node:16
-
+FROM node:lts-alpine
+ENV NODE_ENV=production
 WORKDIR /app
-
-COPY package*.json ./
-
-RUN npm install
-
+COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
+RUN npm install --production --silent && mv node_modules ../
 COPY . .
-
 EXPOSE 3000
-
-CMD [ "npm", "start" ]
+ARG API_URL
+ENV API_URL $API_URL
+RUN chown -R node /app
+USER node
+CMD ["npm", "start"]

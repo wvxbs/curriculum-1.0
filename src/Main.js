@@ -6,7 +6,6 @@ import InfoPill from "./main/InfoPill"
 import ProfessionalExperience from "./main/ProfessionalExperience"
 import Footer from "./components/Footer"
 import FullWidthPreLoader from "./components/FullWidthPreLoader"
-import Request from "./Request.json"
 
 const Main = props => {
 
@@ -18,8 +17,8 @@ const Main = props => {
   const [ErrorMessage,setErrorMessage]=useState("")
 
   const instance = axios.create({
-    proxy: Request.Proxy,
-    baseURL: Request.BaseUrl,
+    proxy: process.env.API_URL,
+    baseURL: process.env.API_URL,
     responseType: 'json',
     timeout: 5000,
     headers: {
@@ -67,7 +66,7 @@ const Main = props => {
     if(DataIsMissing) {
       console.log(ErrorMessage)
       return (
-        <FileNotFoundError title="Sem Dados" alt={ErrorMessage}/>
+        <FileNotFoundError title="Sem Dada" alt={ErrorMessage}/>
       )
     }
     else {
