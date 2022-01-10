@@ -66,7 +66,7 @@ const Main = props => {
     if(DataIsMissing) {
       console.log(ErrorMessage)
       return (
-        <FileNotFoundError title="Sem Dada" alt={ErrorMessage}/>
+        <FileNotFoundError title="Sem Dados" alt={ErrorMessage}/>
       )
     }
     else {
