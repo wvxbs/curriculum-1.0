@@ -1,13 +1,12 @@
-version: '3.4'
+version: '3.8'
 
 services:
-  curriculum:
-    image: curriculum
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+  curriculum_1.0:
+    image: curriculum_1.0
+    build: .
     environment:
-      NODE_ENV: production
-      API_URL: ${URL} 
+      NODE_ENV: production,
+      REACT_ENV:  production,
+      API_URL: ${API_URL} 
     ports:
       - 3000:3000
