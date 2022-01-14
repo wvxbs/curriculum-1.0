@@ -1,8 +1,8 @@
-version: '3.8'
+version: '3.3'
 
 services:
-  curriculum_1.0:
-    image: curriculum_1.0
+  web:
+    image: wvxbs/curriculum_1.0
     build: .
     environment:
       NODE_ENV: production,
