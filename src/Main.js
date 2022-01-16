@@ -17,8 +17,8 @@ const Main = props => {
   const [ErrorMessage,setErrorMessage]=useState("")
 
   const instance = axios.create({
-    proxy: process.env.API_URL,
-    baseURL: process.env.API_URL,
+    proxy: process.env.REACT_APP_BASE_PATH,
+    baseURL: process.env.REACT_APP_BASE_PATH,
     responseType: 'json',
     timeout: 5000,
     headers: {

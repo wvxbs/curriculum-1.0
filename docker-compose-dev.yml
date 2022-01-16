@@ -6,8 +6,8 @@ services:
     build: .
     environment:
       NODE_ENV: development,
-      REACT_ENV: development,
-      API_URL: ${API_URL} 
+      REACT_ENV: development
+
     ports:
       - 3000:3000
     volumes:
