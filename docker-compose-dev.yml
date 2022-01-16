@@ -6,11 +6,9 @@ services:
     build: .
     environment:
       NODE_ENV: development,
-      REACT_ENV:  development,
+      REACT_ENV: development,
       API_URL: ${API_URL} 
     ports:
       - 3000:3000
-      - 9229:9229
-    command: ["node", "--inspect=0.0.0.0:9229", "index.js"]
     volumes:
       - .:/app
