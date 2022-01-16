@@ -1,5 +1,5 @@
 # curriculum
-The first version of my curriculum, made using React and Bulma
+My personal curriculum
 
 ## Before running
 You need to have npm installed in your machine
