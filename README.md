@@ -1,4 +1,4 @@
-# curriculum-1.0
+# curriculum
 The first version of my curriculum, made using React and Bulma
 
 ## Before running
