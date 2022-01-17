@@ -50,14 +50,6 @@ const Main = props => {
     ManageRequests()
   })
 
-   const RenderPopulatedComponent = (Component, Array) => {data
-    if(!DataIsMissing) {
-    return Array.map(i => {
-      return Component(i)
-    })
-  }
-  }
-
   if(Loading)  {
     return (
       <FullWidthPreLoader />
