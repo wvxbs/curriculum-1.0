@@ -6,6 +6,7 @@ import InfoPill from "./main/InfoPill"
 import ProfessionalExperience from "./main/ProfessionalExperience"
 import Footer from "./components/Footer"
 import FullWidthPreLoader from "./components/FullWidthPreLoader"
+import Information from "./main/Information"
 
 const Main = props => {
 
@@ -49,7 +50,7 @@ const Main = props => {
     ManageRequests()
   })
 
-   const RenderPopulatedComponent = (Component, Array) => {
+   const RenderPopulatedComponent = (Component, Array) => {data
     if(!DataIsMissing) {
     return Array.map(i => {
       return Component(i)
@@ -71,28 +72,17 @@ const Main = props => {
     }
     else {
     return(
-      <div className="App">
-        <div className="container">
-          <div>
-            {RenderPopulatedComponent(Header, HeaderContent)}
-          </div>
-          <div>
-          <div className="section-title">
-              Informações Rápidas
-          </div>
-          <div className="row justify-content-sm-center mt-4">
-            {RenderPopulatedComponent(InfoPill, InfoPillContent)} 
-          </div>
-          <div className="section-title">
-              Experiência Profissional
-          </div>
-          <div className="row mt-4">
-            {RenderPopulatedComponent(ProfessionalExperience, ProfessionalExperienceContent)}
-          </div>
-        </div>
-        </div>
-        <Footer />
-      </div>
+      <Information 
+        data={{
+          "Header" : Header,
+          "HeaderContent" : HeaderContent,
+          "InfoPill" : InfoPill,
+          "InfoPillContent" : InfoPillContent,
+          "ProfessionalExperience" : ProfessionalExperience,
+          "ProfessionalExperienceContent" : ProfessionalExperienceContent,
+          "DataIsMissing" : DataIsMissing
+        }}
+      />
     )
     }
   }
