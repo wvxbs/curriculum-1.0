@@ -2,18 +2,14 @@ version: '3.8'
 
 services:
   web:
-    image: wvxbs/curriculum-dev
-    build: .
+    image: wvxbs/curriculum:dev
+    build:
+      context: .
+      dockerfile: ./Dockerfile.dev
     environment:
       NODE_ENV: development,
       REACT_ENV: development
-    links:
-      - "api"
     ports:
-      - 3000:80
+      - 3000:3000
     volumes:
-      - .:/app
-  api:
-    image : wvxbs/curriculum-rest
-    ports:
-      - 3001:81
+      - .:/app/dev
