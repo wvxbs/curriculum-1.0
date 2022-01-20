@@ -1,5 +1,5 @@
-import BoldTitle from './../components/BoldTitle'
-import Subtitle from './../components/Subtitle'
+import BoldTitle from '../../components/BoldTitle'
+import Subtitle from '../../components/Subtitle'
 
 const Header = (props) => (
     <div>

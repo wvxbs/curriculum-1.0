@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 import FileNotFoundError from "./error/PageSizedError"
-import Header from "./home/Header"
-import InfoPill from "./home/InfoPill"
-import ProfessionalExperience from "./home/ProfessionalExperience"
 import Footer from "./components/Footer"
 import FullWidthPreLoader from "./components/FullWidthPreLoader"
 import Information from "./home/Information"
+import Hero from "./home/Hero"
 
 const Home = props => {
 
@@ -64,17 +62,21 @@ const Home = props => {
     }
     else {
     return(
-      <Information 
-        data={{
-          "Header" : Header,
-          "HeaderContent" : HeaderContent,
-          "InfoPill" : InfoPill,
-          "InfoPillContent" : InfoPillContent,
-          "ProfessionalExperience" : ProfessionalExperience,
-          "ProfessionalExperienceContent" : ProfessionalExperienceContent,
-          "DataIsMissing" : DataIsMissing
-        }}
-      />
+      <div>
+        <Hero 
+          data={{
+            "HeaderContent" : HeaderContent,
+          }}
+        />
+        <Information 
+          data={{
+            "HeaderContent" : HeaderContent,
+            "InfoPillContent" : InfoPillContent,
+            "ProfessionalExperienceContent" : ProfessionalExperienceContent,
+            "DataIsMissing" : DataIsMissing
+          }}
+        />
+      </div>
     )
     }
   }

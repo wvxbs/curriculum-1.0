@@ -1,4 +1,7 @@
 import React from 'react'
+import Header from "./information/Header"
+import InfoPill from "./information/InfoPill"
+import ProfessionalExperience from "./information/ProfessionalExperience"
 
 const Information = props => {
 
@@ -14,20 +17,20 @@ const Information = props => {
         <div className="information">
           <div className="container">
             <div>
-              {RenderPopulatedComponent(props.data.Header, props.data.HeaderContent)}
+              {RenderPopulatedComponent(Header, props.data.HeaderContent)}
             </div>
             <div>
             <div className="section-title">
                 Informações Rápidas
             </div>
             <div className="row justify-content-sm-center mt-4">
-              {RenderPopulatedComponent(props.data.InfoPill, props.data.InfoPillContent)} 
+              {RenderPopulatedComponent(InfoPill, props.data.InfoPillContent)} 
             </div>
             <div className="section-title">
                 Experiência Profissional
             </div>
             <div className="row mt-4">
-              {RenderPopulatedComponent(props.data.ProfessionalExperience, props.data.ProfessionalExperienceContent)}
+              {RenderPopulatedComponent(ProfessionalExperience, props.data.ProfessionalExperienceContent)}
             </div>
           </div>
           </div>

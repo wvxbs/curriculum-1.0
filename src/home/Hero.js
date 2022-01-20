@@ -1,29 +1,11 @@
 import React from 'react'
 
-const Information = props => {
+const Hero = props => {
     return(
-        <div className="information">
-          <div className="container">
-            <div>
-              {RenderPopulatedComponent(props.data.Header, props.data.HeaderContent)}
-            </div>
-            <div>
-            <div className="section-title">
-                Informações Rápidas
-            </div>
-            <div className="row justify-content-sm-center mt-4">
-              {RenderPopulatedComponent(props.data.InfoPill, props.data.InfoPillContent)} 
-            </div>
-            <div className="section-title">
-                Experiência Profissional
-            </div>
-            <div className="row mt-4">
-              {RenderPopulatedComponent(props.data.ProfessionalExperience, props.data.ProfessionalExperienceContent)}
-            </div>
-          </div>
-          </div>
+        <div>
+
         </div>
       )
 }
 
-export default Information
+export default Hero

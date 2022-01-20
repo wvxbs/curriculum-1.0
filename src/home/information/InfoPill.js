@@ -1,5 +1,5 @@
-import InfoPillItem from "./infopill/InfoPillItem"
-import InfoPillItemList from "./infopill/InfoPillItemList"
+import InfoPillItem from "../infopill/InfoPillItem"
+import InfoPillItemList from "../infopill/InfoPillItemList"
 
 const InfoPill = props => {
 
