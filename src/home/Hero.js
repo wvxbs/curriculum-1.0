@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = props => {
     return(
         <div>
-          <div className="hero is-success is-fullheight">
+          <div className="hero is-dark is-fullheight">
             <div className="hero-head">
               <div className="navbar">
                 <div className="container">
