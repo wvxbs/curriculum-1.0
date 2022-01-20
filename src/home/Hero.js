@@ -19,14 +19,14 @@ const Hero = props => {
                   </div>
                   <div id="navbarMenuHeroC" className="navbar-menu">
                     <div className="navbar-end">
-                      <a className="navbar-item is-active">
-                        Home
+                      <a className="navbar-item">
+                        Informações
                       </a>
                       <a className="navbar-item">
-                        Examples
+                        Experiência
                       </a>
                       <a className="navbar-item">
-                        Documentation
+                        Educação
                       </a>
                       <span className="navbar-item">
                         <a className="button is-success is-inverted">
@@ -43,11 +43,11 @@ const Hero = props => {
             </div>
             <div className="hero-body">
               <div className="container has-text-centered">
-                <p className="title">
-                  Title
+                <p className="title is-1">
+                  <b>Gabriel Ferreira</b>
                 </p>
-                Information <p className="subtitle">
-                  Subtitle
+                <p className="subtitle">
+                  Estudante | Desenvolvedor
                 </p>
               </div>
             </div>

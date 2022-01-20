@@ -3,10 +3,7 @@ import ReactDOM from 'react-dom'
 import Home from './Home'
 import reportWebVitals from './reportWebVitals'
 import 'bulma/css/bulma.min.css'
-import './style/animations.css'
-import './style/index.css'
-import './style/phone.css'
-import './style/tablet.css'
+import './style/sass/index.sass'
 
 ReactDOM.render(
   <React.StrictMode>
