@@ -8,4 +8,4 @@ services:
       NODE_ENV: production,
       REACT_ENV:  production,
     ports:
-      - 3000:3000
+      - 3000:80

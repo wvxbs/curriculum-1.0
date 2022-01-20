@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 import FileNotFoundError from "./error/PageSizedError"
-import Header from "./main/Header"
-import InfoPill from "./main/InfoPill"
-import ProfessionalExperience from "./main/ProfessionalExperience"
+import Header from "./home/Header"
+import InfoPill from "./home/InfoPill"
+import ProfessionalExperience from "./home/ProfessionalExperience"
 import Footer from "./components/Footer"
 import FullWidthPreLoader from "./components/FullWidthPreLoader"
-import Information from "./main/Information"
+import Information from "./home/Information"
 
-const Main = props => {
+const Home = props => {
 
   const [Loading, SetLoading] = useState(true)
   const [DataIsMissing,setDataIsMissing]=useState(true)
@@ -80,4 +80,4 @@ const Main = props => {
   }
 }
 
-export default Main
+export default Home

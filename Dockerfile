@@ -3,7 +3,7 @@ ENV NODE_ENV=production
 ENV REACT_ENV=production
 WORKDIR /app
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
-RUN npm install --production --silent && mv node_modules ../
+RUN npm install --silent && mv node_modules ../
 COPY . .
 EXPOSE 3000
 ARG API_URL

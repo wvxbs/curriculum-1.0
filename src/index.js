@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Main from './Main';
+import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import './style/animations.css'
@@ -10,7 +10,7 @@ import './style/tablet.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Main />
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );
