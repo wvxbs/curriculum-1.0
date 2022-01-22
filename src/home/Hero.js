@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = props => {
     return(
         <div>
-          <div className="hero is-dark is-fullheight">
+          <div className="hero is-fullheight">
             <div className="hero-head">
               <div className="navbar">
                 <div className="container">
@@ -29,11 +29,11 @@ const Hero = props => {
                         Educação
                       </a>
                       <span className="navbar-item">
-                        <a className="button is-success is-inverted">
+                        <a className="button is-light is-inverted">
                           <span className="icon">
                             <i className="fab fa-github"></i>
                           </span>
-                          <span>Download</span>
+                          <span>wvxbs</span>
                         </a>
                       </span>
                     </div>
@@ -50,20 +50,6 @@ const Hero = props => {
                   Estudante | Desenvolvedor
                 </p>
               </div>
-            </div>
-            <div className="hero-foot">
-              <nav className="tabs is-boxed is-fullwidth">
-                <div className="container">
-                  <ul>
-                    <li className="is-active"><a>Overview</a></li>
-                    <li><a>Modifiers</a></li>
-                    <li><a>Grid</a></li>
-                    <li><a>Elements</a></li>
-                    <li><a>Components</a></li>
-                    <li><a>Layout</a></li>
-                  </ul>
-                </div>
-              </nav>
             </div>
           </div>
         </div>
