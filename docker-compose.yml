@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   web:
-    image: wvxbs/curriculum:prod
+    image: wvxbs/curriculum:stable
     build:
       context: .
       dockerfile: ./Dockerfile

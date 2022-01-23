@@ -17,4 +17,4 @@ services:
   api:
     image: wvxbs/curriculum-rest
     ports:
-      - 3001:3001
+      - 3001:3001 
