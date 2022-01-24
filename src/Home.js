@@ -8,7 +8,7 @@ import Hero from "./home/Hero"
 
 const Home = props => {
 
-  const [Loading, SetLoading] = useState(true)
+  const [Loading, setLoading] = useState(true)
   const [DataIsMissing,setDataIsMissing]=useState(true)
   const [HeaderContent,setHeaderContent]=useState([])
   const [InfoPillContent,setInfoPillContent]=useState([])
@@ -30,11 +30,11 @@ const Home = props => {
     .then(res => {
       Setter(res.data)
       setDataIsMissing(false)
-      SetLoading(false)
+      setLoading(false)
     })
     .catch(error => {
       setErrorMessage(error.message)
-      SetLoading(false)
+      setLoading(false)
     })
   }
 
