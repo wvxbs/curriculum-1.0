@@ -15,3 +15,9 @@ npm install
 ```bash
 npm start
 ```
+
+## To run via docker compose in dev mode
+
+```bash
+docker-compose -f docker-compose-dev.yml up
+```
