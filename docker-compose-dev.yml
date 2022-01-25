@@ -13,8 +13,3 @@ services:
       - 3000:3000
     volumes:
       - .:/app/dev
-
-  api:
-    image: wvxbs/curriculum-rest
-    ports:
-      - 3001:3001 
