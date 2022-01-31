@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from "./information/Header"
 import InfoPill from "./information/InfoPill"
 import ProfessionalExperience from "./information/ProfessionalExperience"
 
@@ -15,10 +14,7 @@ const Information = props => {
 
     return(
         <div className="information">
-          <div className="container">
-            <div>
-              {RenderPopulatedComponent(Header, props.data.HeaderContent)}
-            </div>
+          <div className="container">ex
             <div>
             <div className="section-title">
                 Informações Rápidas

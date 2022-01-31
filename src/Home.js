@@ -70,7 +70,6 @@ const Home = props => {
         />
         <Information 
           data={{
-            "HeaderContent" : HeaderContent,
             "InfoPillContent" : InfoPillContent,
             "ProfessionalExperienceContent" : ProfessionalExperienceContent,
             "DataIsMissing" : DataIsMissing
