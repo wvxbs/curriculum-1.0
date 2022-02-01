@@ -20,7 +20,7 @@ const Information = props => {
         <div className="columns">
           {RenderPopulatedComponent(InfoPill, props.data.InfoPillContent)} 
         </div>
-        <div>
+        <div className="title is-2">
           Experiência Profissional
         </div>
         <div className="columns">
