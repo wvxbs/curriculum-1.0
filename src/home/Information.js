@@ -10,27 +10,23 @@ const Information = props => {
           return Component(i)
         })
       }
-      }
+    }
 
     return(
-        <div className="information">
-          <div className="container">ex
-            <div>
-            <div className="section-title">
-                Informações Rápidas
-            </div>
-            <div className="row justify-content-sm-center mt-4">
-              {RenderPopulatedComponent(InfoPill, props.data.InfoPillContent)} 
-            </div>
-            <div className="section-title">
-                Experiência Profissional
-            </div>
-            <div className="row mt-4">
-              {RenderPopulatedComponent(ProfessionalExperience, props.data.ProfessionalExperienceContent)}
-            </div>
-          </div>
-          </div>
+      <div className="container">
+        <div className="title is-2">
+          Informações Rápidas
         </div>
+        <div className="columns">
+          {RenderPopulatedComponent(InfoPill, props.data.InfoPillContent)} 
+        </div>
+        <div>
+          Experiência Profissional
+        </div>
+        <div className="columns">
+          {RenderPopulatedComponent(ProfessionalExperience, props.data.ProfessionalExperienceContent)}
+        </div>
+      </div>
       )
 }
 
