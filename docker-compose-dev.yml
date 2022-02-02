@@ -15,6 +15,6 @@ services:
       - .:/app/dev
 
   api:
-    image: wvxbs/curriculum-rest
+    image: wvxbs/curriculum-rest:latest
     ports:
       - 3001:3001
