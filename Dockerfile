@@ -1,18 +1,14 @@
-FROM node:16-alpine as build
-WORKDIR /app
-ENV PATH /app/node_modules/.bin:$PATH
+FROM node:16-alpine
+ENV NODE_ENV=production
+ENV REACT_ENV=production
+ENV REACT_APP_BASE_PATH=${{secrets.REACT_APP_BASE_PATH}} 
+WORKDIR /app/dev
+COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
+RUN npm install --silent && mv node_modules ../
+COPY . .
+EXPOSE 3000
 ARG API_URL
 ENV API_URL=API_URL
-COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
-RUN npm install --production
-COPY . /app
-RUN chown -R node /app
+RUN chown -R node /app/dev
 USER node
-RUN npm run build
-
-FROM nginx:stable-alpine
-COPY --from=build /app/build /usr/share/nginx/html
-RUN rm /etc/nginx/conf.d/default.conf
-COPY nginx/nginx.conf /etc/nginx/conf.d/
-EXPOSE 8080
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["npm", "start"]

@@ -1,6 +1,8 @@
 FROM node:16-alpine
 ENV NODE_ENV=production
 ENV REACT_ENV=production
+ARG REACT_APP_BASE_PATH
+ENV REACT_APP_BASE_PATH=REACT_APP_BASE_PATH 
 WORKDIR /app/dev
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 RUN npm install --silent && mv node_modules ../
