@@ -9,7 +9,6 @@ services:
     environment:
       NODE_ENV: development,
       REACT_ENV: development
-      REACT_APP_BASE_PATH: ""
     ports:
       - 3000:3000
     volumes:
