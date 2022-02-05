@@ -1,11 +1,17 @@
-import React from 'react'
+import { useEffect, useState } from 'react'
 import InfoPill from "./information/InfoPill"
 import ProfessionalExperience from "./information/ProfessionalExperience"
 
 const Information = props => {
 
+    useEffect(() => {
+      SetDataIsMissing(props.data.DataIsMissing)
+    })
+
+    const [DataIsMissing, SetDataIsMissing] = useState(true)	
+
     const RenderPopulatedComponent = (Component, Array) => {
-        if(!props.data.DataIsMissing) {
+        if(!DataIsMissing) {
         return Array.map(i => {
           return Component(i)
         })
