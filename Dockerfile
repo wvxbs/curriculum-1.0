@@ -7,7 +7,6 @@ RUN npm i --silent
 COPY . /app
 RUN npm run build
 
-# stage 2 - build the final image and copy the react build files
 FROM nginx:alpine
 COPY --from=build /app/build /usr/share/nginx/html
 RUN rm /etc/nginx/conf.d/default.conf
