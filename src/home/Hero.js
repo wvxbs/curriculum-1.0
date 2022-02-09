@@ -4,7 +4,7 @@ import Header from './hero/Header'
 const Hero = props => {
     return(
         <div>
-          <div className="hero is-fullheight">
+          <div className="hero is-fullheight is-primary">
             <Header
               SimpleNavbarItens={[
                 'Informações',
