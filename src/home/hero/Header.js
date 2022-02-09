@@ -35,11 +35,9 @@ const Header = props => {
               <div className="navbar-end">
                 {RenderSimpleNavbarItens(props.SimpleNavbarItens)}
                 <Button
-                  content={{
-                    "url" : "https://github.com/wvxbs",
-                    "text" : "wvxbs",
-                    "icon" : ""
-                  }}
+                  url="https://github.com/wvxbs"
+                  text="wvxbs"
+                  icon=""
                 />
               </div>
             </div>

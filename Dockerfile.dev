@@ -5,7 +5,7 @@ ARG REACT_APP_BASE_PATH
 ENV REACT_APP_BASE_PATH=REACT_APP_BASE_PATH 
 WORKDIR /app/dev
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
-RUN npm install --silent && mv node_modules ../
+RUN npm install && mv node_modules ../
 COPY . .
 EXPOSE 3000
 ARG API_URL

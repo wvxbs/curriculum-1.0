@@ -2,11 +2,11 @@ import React from 'react'
 
 const Button = props => (
     <span className="navbar-item">
-      <a className="button is-light is-inverted" href={props.url}>
+      <a className="button is-light" href={props.url}>
+        {props.text}
         <span className="icon">
-            <i className="fab fa-github"></i>
+            <i className={props.icon}></i>
         </span>
-        <span>{props.text}</span>
       </a>
     </span>
 )
