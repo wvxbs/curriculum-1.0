@@ -64,9 +64,7 @@ const Home = props => {
     return(
       <div>
         <Hero 
-          data={{
-            "HeaderContent" : HeaderContent,
-          }}
+            HeaderContent={HeaderContent}            
         />
         <Information 
           data={{

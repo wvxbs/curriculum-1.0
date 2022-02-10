@@ -4,7 +4,7 @@ import Header from './hero/Header'
 const Hero = props => {
     return(
         <div>
-          <div className="hero is-fullheight is-primary mgb-medium">
+          <div className="hero is-fullheight is-primary mb-4">
             <Header
               SimpleNavbarItens={[
                 'Informações',
@@ -14,11 +14,11 @@ const Hero = props => {
             />
             <div className="hero-body">
               <div className="container has-text-centered">
-                <p className="title is-1">
-                  <b>Gabriel Ferreira</b>
+                <p className="title is-1 is-bold">
+                  <b>{props.HeaderContent.title}</b>
                 </p>
                 <p className="subtitle">
-                  Estudante | Desenvolvedor
+                  {props.HeaderContent.subtitle}
                 </p>
               </div>
             </div>
