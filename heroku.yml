@@ -1,5 +1,16 @@
+setup:
+  addons:
+    - plan: heroku-postgresql
+      as: DATABASE
+  config:
+    REACT_APP_BASE_PATH: ${{}}
 build:
-    docker:
-        web: Dockerfile.dev
-    run
-        web: bundle exec puma -C config/puma.rb
+  docker: 
+    web: Dockerfile
+    worker: worker/Dockerfile
+  config:
+    ENV NODE_ENV: production
+    ENV REACT_ENV: production
+run:
+  web:
+    
