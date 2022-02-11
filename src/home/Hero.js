@@ -15,10 +15,10 @@ const Hero = props => {
             <div className="hero-body">
               <div className="container has-text-centered">
                 <p className="title is-1 is-bold">
-                  <b>{props.HeaderContent.title}</b>
+                  <b>{props.HeroContent.title}</b>
                 </p>
                 <p className="subtitle">
-                  {props.HeaderContent.subtitle}
+                  {props.HeroContent.subtitle}
                 </p>
               </div>
             </div>

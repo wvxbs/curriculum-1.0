@@ -6,11 +6,12 @@ import FullWidthPreLoader from "./components/FullWidthPreLoader"
 import Information from "./home/Information"
 import Hero from "./home/Hero"
 
-const Home = props => {
+const Home = () => {
 
   const [Loading, setLoading] = useState(true)
   const [DataIsMissing,setDataIsMissing]=useState(true)
   const [HeaderContent,setHeaderContent]=useState([])
+  const [HeroContent,setHeroContent]=useState([])
   const [InfoPillContent,setInfoPillContent]=useState([])
   const [ProfessionalExperienceContent,setProfessionalExperienceContent]=useState([])
   const [ErrorMessage,setErrorMessage]=useState("")
@@ -40,6 +41,7 @@ const Home = props => {
 
   const ManageRequests = async() => {
     await FetchData("Header", setHeaderContent)
+    await FetchData("Hero", setHeroContent)
     await FetchData("InfoPill", setInfoPillContent)
     await FetchData("ProfessionalExperience", setProfessionalExperienceContent)
   }
@@ -64,7 +66,8 @@ const Home = props => {
     return(
       <div>
         <Hero 
-            HeaderContent={HeaderContent}            
+            HeaderContent={HeaderContent}
+            HeroContent={HeroContent}            
         />
         <Information 
           data={{

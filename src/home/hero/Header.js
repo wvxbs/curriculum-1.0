@@ -23,7 +23,7 @@ const Header = props => {
           <div className="container">
             <div className="navbar-brand">
               <a className="navbar-item">
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
+                <p className="is-bold title">Gabriel Ferreira</p>
               </a>
               <a className={`navbar-burguer ${isActive ? "is-active" : ""}`} data-target="navbarMenuHeroC" onclick={HandleClick} aria-label="menu" aria-expanded="false">
                 <div aria-hidden="true"></div>
