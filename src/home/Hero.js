@@ -5,7 +5,7 @@ const Hero = props => {
     return(
         <div>
           <div className="hero is-fullheight is-primary mb-4">
-            <Header
+            <Header     
               SimpleNavbarItens={[
                 'Informações',
                 'Experiência', 

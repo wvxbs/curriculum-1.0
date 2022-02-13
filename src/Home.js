@@ -31,11 +31,9 @@ const Home = () => {
     .then(res => {
       Setter(res.data)
       setDataIsMissing(false)
-      setLoading(false)
     })
     .catch(error => {
       setErrorMessage(error.message)
-      setLoading(false)
     })
   }
 
@@ -44,6 +42,8 @@ const Home = () => {
     await FetchData("Hero", setHeroContent)
     await FetchData("InfoPill", setInfoPillContent)
     await FetchData("ProfessionalExperience", setProfessionalExperienceContent)
+
+    setLoading(false)
   }
 
   useEffect(() => {
