@@ -11,19 +11,21 @@ const Header = props => {
 
     const RenderSimpleNavbarItens = Arr => (
       Arr.map(i => (
-        <div className="navbar-item">
+        <a className="navbar-item">
           {i}
-        </div>
+        </a>
       ))
     )
 
     return (
       <div className="hero-head">
-        <div className="navbar">
+        <div className="navbar is-white">
           <div className="container">
             <div className="navbar-brand">
               <a className="navbar-item">
-                <p className="is-bold title">Gabriel Ferreira</p>
+                <img 
+                  src="https://i.imgur.com/50q6xRE.png"
+                />
               </a>
               <a className={`navbar-burguer ${isActive ? "is-active" : ""}`} data-target="navbarMenuHeroC" onclick={HandleClick} aria-label="menu" aria-expanded="false">
                 <div aria-hidden="true"></div>

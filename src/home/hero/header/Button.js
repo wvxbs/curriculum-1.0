@@ -1,14 +1,14 @@
 import React from 'react'
 
 const Button = props => (
-    <span className="navbar-item">
-      <a className="button is-light" href={props.url}>
+    <a className="navbar-item">
+      <a className="button is-dark" href={props.url}>
         {props.text}
-        <span className="icon">
+        <div className="icon">
             <i className={props.icon}></i>
-        </span>
+        </div>
       </a>
-    </span>
+    </a>
 )
 
 export default Button 
