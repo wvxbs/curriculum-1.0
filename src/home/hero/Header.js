@@ -9,7 +9,7 @@ const Header = props => {
       setisActive(!isActive)
     }
 
-    const RenderSimpleNavbarItens = Arr => (
+    const RenderSimpleNavbarItems = Arr => (
       Arr.map(i => (
         <a className="navbar-item">
           {i}
@@ -35,7 +35,7 @@ const Header = props => {
             </div>
             <div id="navbarMenuHeroC" className={`navbar-menu ${isActive ? "is-active" : ""}`}>
               <div className="navbar-end">
-                {RenderSimpleNavbarItens(props.data.SimpleNavbarItens)}
+                {RenderSimpleNavbarItems(props.data.SimpleNavbarItems)}
                 <Button
                   url={props.data.HeaderContent.button.url}
                   text={props.data.HeaderContent.button.text}
