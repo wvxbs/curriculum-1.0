@@ -6,19 +6,22 @@ const Hero = props => {
         <div>
           <div className="hero is-fullheight is-white mb-4">
             <Header     
-                SimpleNavbarItens={[
-                  'Informações',
+              data={{
+                "HeaderContent" : props.data.HeaderContent,
+                "SimpleNavbarItems" :[
+                  'Informações', 
                   'Experiência', 
-                  'Educação',
-                ]}
+                  'Educação'
+                ],
+              }}
             />
             <div className="hero-body">
               <div className="container has-text-centered">
                 <p className="title is-1 is-bold">
-                  <b>Gabriel Ferreira</b>
+                  <b>{props.data.HeroContent.title}</b>
                 </p>
                 <p className="subtitle">
-                  Estudante | Desenvolvedor
+                  {props.data.HeroContent.subtitle}
                 </p>
               </div>
             </div>

@@ -66,8 +66,10 @@ const Home = () => {
     return(
       <div>
         <Hero 
-            HeaderContent={HeaderContent}
-            HeroContent={HeroContent}            
+          data={{
+            "HeaderContent" : HeaderContent,
+            "HeroContent" : HeroContent
+            }}            
         />
         <Information 
           data={{

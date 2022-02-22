@@ -22,11 +22,11 @@ const Header = props => {
         <div className="navbar is-white">
           <div className="container">
             <div className="navbar-brand">
-              <a className="navbar-item">
+              <div className="navbar-item">
                 <img 
-                  src="https://i.imgur.com/50q6xRE.png"
+                  src={props.data.HeaderContent.icon}
                 />
-              </a>
+              </div>
               <a className={`navbar-burguer ${isActive ? "is-active" : ""}`} data-target="navbarMenuHeroC" onclick={HandleClick} aria-label="menu" aria-expanded="false">
                 <div aria-hidden="true"></div>
                 <div aria-hidden="true"></div>
@@ -35,11 +35,11 @@ const Header = props => {
             </div>
             <div id="navbarMenuHeroC" className={`navbar-menu ${isActive ? "is-active" : ""}`}>
               <div className="navbar-end">
-                {RenderSimpleNavbarItens(props.SimpleNavbarItens)}
+                {RenderSimpleNavbarItens(props.data.SimpleNavbarItens)}
                 <Button
-                  url="https://github.com/wvxbs"
-                  text="wvxbs"
-                  icon=""
+                  url={props.data.HeaderContent.button.url}
+                  text={props.data.HeaderContent.button.text}
+                  icon={props.data.HeaderContent.button.icon}
                 />
               </div>
             </div>

@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  web:
+    image: wvxbs/curriculum:dev
+    build:
+      context: .
+      dockerfile: ./Dockerfile.dev
+    environment:
+      NODE_ENV: development,
+      REACT_ENV: development
+      REACT_APP_BASE_PATH: $REACT_APP_BASE_PATH
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app/dev
