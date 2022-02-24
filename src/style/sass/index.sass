@@ -53,8 +53,8 @@ body
   font-family: 'Montserrat-bold', sans-serif
   font-weight: bolder
 
-  is-huge
-    font-size: 1000vw
+.is-huge
+  font-size: 15vw
 
 
 .is-light
@@ -96,3 +96,8 @@ body
     &.is-active 
         opacity: 1
         z-index: 1
+
+  
+@include touch
+  .hero
+    background-color: #000
