@@ -6,7 +6,7 @@ import FullWidthPreLoader from "../components/FullWidthPreLoader"
 import Information from "./home/Information"
 import Hero from "./home/Hero"
 
-const Home = () => {
+const Home = props => {
 
   const [Loading, setLoading] = useState(true)
   const [DataIsMissing,setDataIsMissing]=useState(true)
