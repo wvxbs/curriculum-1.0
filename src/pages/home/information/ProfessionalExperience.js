@@ -1,4 +1,4 @@
-import Duration from "../../components/Duration"
+import Duration from "../../../components/Duration"
 
 const ProfessionalExperience = (props) => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Home from './Home'
+import Home from './pages/Home.js'
 import reportWebVitals from './reportWebVitals'
 import './style/sass/index.sass'
 

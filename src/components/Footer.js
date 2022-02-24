@@ -1,6 +1,12 @@
 const Footer = props => {
     return (
-        <div className="footer" />
+        <footer className="footer is-white">
+            <div className="content has-text-centered">
+                <p>
+                    <strong>Curriculum</strong> por Gabriel Ferreira
+                </p>
+            </div>
+        </footer>
     )
 }
 

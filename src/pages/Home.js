@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
-import FileNotFoundError from "./error/PageSizedError"
-import Footer from "./components/Footer"
-import FullWidthPreLoader from "./components/FullWidthPreLoader"
+import FileNotFoundError from "../components/error/PageSizedError"
+import Footer from "../components/Footer"
+import FullWidthPreLoader from "../components/FullWidthPreLoader"
 import Information from "./home/Information"
 import Hero from "./home/Hero"
 
@@ -78,6 +78,7 @@ const Home = () => {
             "DataIsMissing" : DataIsMissing
           }}
         />
+        <Footer />
       </div>
     )
     }

@@ -16,8 +16,8 @@ const Hero = props => {
               }}
             />
             <div className="hero-body">
-              <div className="container has-text-centered">
-                <p className="title is-1 is-bold">
+              <div className="container">
+                <p className="title is-huge is-bold">
                   <b>{props.data.HeroContent.title}</b>
                 </p>
                 <p className="subtitle">
