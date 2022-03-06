@@ -4,7 +4,7 @@ import Header from './hero/Header'
 const Hero = props => {
     return(
         <div>
-          <div className="hero is-fullheight is-white mb-4">
+          <div className="hero is-fullheight is-white is-gradient mb-4">
             <Header     
               data={{
                 "HeaderContent" : props.data.HeaderContent,

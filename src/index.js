@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Home from './pages/Home.js'
+import Pages from './Pages.js'
 import reportWebVitals from './reportWebVitals'
 import './style/sass/index.sass'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Pages />
   </React.StrictMode>,
   document.getElementById('root')
 )

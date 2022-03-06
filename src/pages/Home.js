@@ -71,14 +71,13 @@ const Home = props => {
             "HeroContent" : HeroContent
             }}            
         />
-        <Information 
+        {/* <Information 
           data={{
             "InfoPillContent" : InfoPillContent,
             "ProfessionalExperienceContent" : ProfessionalExperienceContent,
             "DataIsMissing" : DataIsMissing
           }}
-        />
-        <Footer />
+        /> */}
       </div>
     )
     }
