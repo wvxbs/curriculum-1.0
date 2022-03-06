@@ -7,12 +7,7 @@ const Hero = props => {
           <div className="hero is-fullheight is-white is-gradient mb-4">
             <Header     
               data={{
-                "HeaderContent" : props.data.HeaderContent,
-                "SimpleNavbarItems" :[
-                  'Informações', 
-                  'Experiência', 
-                  'Educação'
-                ],
+                "HeaderContent" : props.data.HeaderContent
               }}
             />
             <div className="hero-body">

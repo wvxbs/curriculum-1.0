@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Button from '../../../components/Button'
+import {Link} from 'react-router-dom'
 
 const Header = props => {
 
@@ -11,9 +12,9 @@ const Header = props => {
 
     const RenderSimpleNavbarItems = Arr => (
       Arr.map(i => (
-        <a className="navbar-item">
-          {i}
-        </a>
+        <Link to={i.link} className="navbar-item">
+          {i.title}
+        </Link>
       ))
     )
 
@@ -23,9 +24,9 @@ const Header = props => {
           <div className="container">
             <div className="navbar-start">
               <div className="navbar-item">
-                {RenderSimpleNavbarItems(props.data.SimpleNavbarItems)}
+                {RenderSimpleNavbarItems(props.data.HeaderContent.simpleNavbarItems)}
               </div>
-              <a className={`navbar-burguer ${isActive ? "is-active" : ""}`} data-target="navbarMenuHeroC" onclick={HandleClick} aria-label="menu" aria-expanded="false">
+              <a className={`navbar-burguer ${isActive ? "is-active" : ""}`} data-target="navbarMenuHeroC" onClick={HandleClick} aria-label="menu" aria-expanded="false">
                 <div aria-hidden="true"></div>
                 <div aria-hidden="true"></div>
                 <div aria-hidden="true"></div>
