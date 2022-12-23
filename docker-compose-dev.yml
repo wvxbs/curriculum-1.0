@@ -19,3 +19,9 @@ services:
     image: wvxbs/curriculum-rest:latest
     ports:
       - 3001:3001
+
+  nginx:
+    build: ./nginx
+    ports:
+    - '80:80'
+    restart: on-failure
